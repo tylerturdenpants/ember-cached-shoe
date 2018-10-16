@@ -4,8 +4,7 @@ const {
   Mixin,
   RSVP: {Promise},
   inject: {service},
-  run,
-  $
+  run
 } = Ember
 
 export default Mixin.create({
@@ -25,7 +24,7 @@ export default Mixin.create({
     let cachedResponse = this.get('cachedShoe').popResponse(requestToken)
 
     if(cachedResponse) {
-      return new Promise((resolve, _) => {
+      return new Promise((resolve) => {
         run.join(null, resolve, cachedResponse)
       })
     }

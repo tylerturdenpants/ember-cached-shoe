@@ -1,3 +1,4 @@
+/* eslint-disable */
 import Ember from 'ember'
 import b2a   from 'b2a'
 
